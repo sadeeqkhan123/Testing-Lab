@@ -1,0 +1,38 @@
+apiVersion: aver/v1
+pipeline:
+  name: hereditary-exome-v1
+  engine: snakemake
+  entrypoint: .
+  revision: null
+  snakefile: workflow/Snakefile
+  profile: docker
+  preset: snakemake-workflows/dna-seq-gatk-variant-calling
+  assay: wes
+  domain: germline_small
+  clinical: true
+  target_bed: null
+  intended_use: >
+    Germline SNV and indel detection for the hereditary cancer exome service,
+    reporting range as defined in SOP-MOL-014.
+  params: {}
+reference:
+  build: GRCh38
+  materials:
+    - sample: HG002
+      truth_set: null
+benchmark:
+  threads: 8
+  stratifications: []
+  region: chr20
+  max_cpus: null
+  max_memory_gb: null
+policy:
+  snv_recall_delta_pp: -0.5
+  indel_recall_delta_pp: -1.0
+  precision_delta_pp: -0.5
+  reference_change: revalidation_required
+platform:
+  enabled: false
+  organization: null
+  url: null
+  pipeline_id: null
