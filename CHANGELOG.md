@@ -1,5 +1,12 @@
 # Changelog — hereditary-exome-v1
 
+## v3.2.0 — 2026-09-18
+
+- samtools environment updated (`=1.10` → `=1.12`) for the htslib CRAM fix
+  flagged by IT security review.
+- MultiQC report generation pinned to the shared container image used by the
+  QC team. **TODO(QC): replace `:latest` with a digest before the next release.**
+
 ## v3.1.0 — 2026-06-12 (validated baseline)
 
 - Baseline release validated under SOP-MOL-014.

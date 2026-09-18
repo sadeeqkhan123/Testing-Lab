@@ -39,5 +39,7 @@ rule multiqc:
         ),
     log:
         "logs/multiqc.log",
+    container:
+        "docker://multiqc/multiqc:latest"
     wrapper:
         "0.74.0/bio/multiqc"
