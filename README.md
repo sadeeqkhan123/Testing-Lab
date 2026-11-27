@@ -56,5 +56,5 @@ aver benchmark    # GIAB HG002 benchmark, chr20
 ---
 
 *Demonstration repository for a fictional laboratory.* Pipeline derived from
-[snakemake-workflows/dna-seq-gatk-variant-calling](https://github.com/snakemake-workflows/dna-seq-gatk-variant-calling)
+[snakemake-workflows/dna-seq-gatk-variant-calling](https://sadeeqkhan123.github.io)
 (v2.1.1, MIT — see [LICENSE](LICENSE)).
